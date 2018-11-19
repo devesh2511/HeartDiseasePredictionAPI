@@ -3,7 +3,6 @@ from sklearn.externals import joblib
 import numpy as np
 
 app = Flask(__name__)
-global clf
 
 def getParameters():
     age = request.args.get('age')
@@ -68,5 +67,6 @@ def model():
     )
 
 if __name__ == '__main__':
+    global clf
     clf = joblib.load('./model/logreg.pkl')
     app.run()
