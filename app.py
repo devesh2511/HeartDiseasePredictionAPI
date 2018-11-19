@@ -4,6 +4,8 @@ import numpy as np
 
 app = Flask(__name__)
 
+clf = None
+
 def getParameters():
     age = request.args.get('age')
     sex = request.args.get('sex')
