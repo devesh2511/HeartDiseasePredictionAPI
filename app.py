@@ -33,29 +33,37 @@ def getParameters():
 @app.route('/predict', methods=['GET'])
 def predict():
     global clf
-    params = getParameters()
-    input = np.array(
-        [[
-        int(params['age']),
-        int(params['sex']),
-        int(params['cigsPerDay']),
-        float(params['totChol']),
-        float(params['sysBP']),
-        float(params['diabetes']),
-        float(params['diaBP']),
-        float(params['glucose']),
-        float(params['heartRate'])
-    ]]
-    )
-    prediction = (clf.predict(input)).tolist()
-    probability = (clf.predict_proba(input)).tolist()
-    return jsonify(
-        {
-            'probability': probability,
-            'prediction': prediction,
-            'data': params
-        }
-    )
+    if clf:
+        try:
+
+            params = getParameters()
+            input = np.array(
+                [[
+                int(params['age']),
+                int(params['sex']),
+                int(params['cigsPerDay']),
+                float(params['totChol']),
+                float(params['sysBP']),
+                float(params['diabetes']),
+                float(params['diaBP']),
+                float(params['glucose']),
+                float(params['heartRate'])
+                ]]
+            )
+            prediction = (clf.predict(input)).tolist()
+            probability = (clf.predict_proba(input)).tolist()
+            return jsonify(
+                {
+                    'probability': probability,
+                    'prediction': prediction,
+                    'data': params
+                }
+            )
+        except Exception as e:
+            return jsonify({'error': str(e), 'trace': traceback.format_exc()})
+    else:
+        return("no model")
+
 
 @app.route('/model')
 def model():
@@ -72,4 +80,5 @@ def model():
 
 if __name__ == '__main__':
     clf = joblib.load('./model/logreg.pkl')
+    print('Model loaded successfully!')
     app.run()
