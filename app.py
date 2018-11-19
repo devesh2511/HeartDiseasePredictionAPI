@@ -4,7 +4,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-clf = None
+clf = joblib.load('./model/logreg.pkl')
 
 def getParameters():
     age = request.args.get('age')
@@ -79,6 +79,5 @@ def model():
     )
 
 if __name__ == '__main__':
-    clf = joblib.load('./model/logreg.pkl')
     print('Model loaded successfully!')
     app.run()
