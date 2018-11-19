@@ -69,4 +69,4 @@ def model():
 
 if __name__ == '__main__':
     clf = joblib.load('./model/logreg.pkl')
-    app.run(debug=True)
+    app.run()
