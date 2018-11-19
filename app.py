@@ -37,12 +37,12 @@ def predict():
         int(params['age']),
         int(params['sex']),
         int(params['cigsPerDay']),
-        int(params['totChol']),
-        int(params['sysBP']),
-        int(params['diabetes']),
-        int(params['diaBP']),
-        int(params['glucose']),
-        int(params['heartRate'])
+        float(params['totChol']),
+        float(params['sysBP']),
+        float(params['diabetes']),
+        float(params['diaBP']),
+        float(params['glucose']),
+        float(params['heartRate'])
     ]]
     )
     prediction = (clf.predict(input)).tolist()
@@ -61,6 +61,7 @@ def model():
     intercept = clf.intercept_.tolist()
     return jsonify(
         {
+            'model': 'Logistic Regression',
             'coefficients': coefficients,
             'intercept': intercept
         }
