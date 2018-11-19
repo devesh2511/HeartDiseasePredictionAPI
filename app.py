@@ -32,6 +32,7 @@ def getParameters():
 
 @app.route('/predict', methods=['GET'])
 def predict():
+    global clf
     params = getParameters()
     input = np.array(
         [[
@@ -58,6 +59,7 @@ def predict():
 
 @app.route('/model')
 def model():
+    global clf
     coefficients = clf.coef_.tolist()
     intercept = clf.intercept_.tolist()
     return jsonify(
@@ -69,6 +71,5 @@ def model():
     )
 
 if __name__ == '__main__':
-    global clf
     clf = joblib.load('./model/logreg.pkl')
     app.run()
