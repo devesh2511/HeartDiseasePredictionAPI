@@ -50,13 +50,18 @@ It is deployed on Heroku [here](https://heartapi.herokuapp.com).
 ## Running locally
 
 1. Clone the repository
-	> git clone https://github.com/agoel00/HeartDiseasePredictionAPI.git
+
+   ```bash
+	   git clone https://github.com/agoel00/HeartDiseasePredictionAPI.git
 	
-    > cd HeartDiseasePredictionAPI
-    
+      cd HeartDiseasePredictionAPI
+   ```
 2. Install dependencies
-	> pip install requirements.txt
+   ```bash
+	   pip install requirements.txt
+   ```
 	
 3. Start the Flask server
-	> python3 app.py
-
+   ```bash
+	   python3 app.py
+   ```
