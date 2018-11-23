@@ -65,3 +65,5 @@ It is deployed on Heroku [here](https://heartapi.herokuapp.com).
    ```bash
 	   python3 app.py
    ```
+
+### A PWA which communicates with this API is deployed [here](https://heartify.netlify.com)
