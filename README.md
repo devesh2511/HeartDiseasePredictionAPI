@@ -8,6 +8,9 @@ The model achieved a test accuracy of around 88%.
 
 It is deployed on Heroku [here](https://heartapi.herokuapp.com).
 
+View the Jupyter notebook
+[here](https://github.com/agoel00/HeartDiseasePredictionAPI/blob/master/model/HeartDisease.ipynb)
+
 ## /predict endpoint
 
 - Takes 9 paramteres as input
