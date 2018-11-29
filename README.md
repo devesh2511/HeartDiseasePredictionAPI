@@ -67,3 +67,6 @@ It is deployed on Heroku [here](https://heartapi.herokuapp.com).
    ```
 
 ### A PWA which communicates with this API is deployed [here](https://heartify.netlify.com)
+
+## License
+MIT
