@@ -1,5 +1,7 @@
 # Heart Disease Prediction API
 
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
 Flask REST API which predicts probability of Coronary Heart Disease in a patient taking 9 parameters based on patient's history as input.
 
 The API uses a Logistic Regression Model from scikit-learn trained on the [Framingham Heart Study Dataset](https://www.kaggle.com/amanajmera1/framingham-heart-study-dataset) from Kaggle.
