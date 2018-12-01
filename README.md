@@ -1,7 +1,7 @@
 # Heart Disease Prediction API
 
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+![Python](https://badgen.net/badge/Python/3.7/orange)
+![License](https://badgen.net/license/MIT/blue)
 
 Flask REST API which predicts probability of Coronary Heart Disease in a patient taking 9 parameters based on patient's history as input.
 
