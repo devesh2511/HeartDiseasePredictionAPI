@@ -74,5 +74,7 @@ View the Jupyter notebook
 
 ### A PWA which communicates with this API is deployed [here](https://heartify.netlify.com)
 
+![status](https://badgen.net/uptime-robot/status/m781547257-02e85bf091a6cde871b002fe)
+
 ## License
 MIT
