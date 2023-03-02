@@ -14,7 +14,7 @@ It is deployed on [here](https://heart-sn1y.onrender.com/).
 View the Jupyter notebook
 [here](https://github.com/devesh2511/HeartDiseasePredictionAPI/blob/master/model/HeartDisease.ipynb)
 
-## /predict endpoint
+## Predict endpoint
 
 - Takes 9 paramteres as input
 - Returns a binary prediction (0 or 1) and probability as well.
