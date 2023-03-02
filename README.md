@@ -9,10 +9,10 @@ The API uses a Logistic Regression Model from scikit-learn trained on the [Frami
 
 The model achieved a test accuracy of around 88%.
 
-It is deployed on Heroku [here](https://heartapi.herokuapp.com).
+It is deployed on [here](https://heart-sn1y.onrender.com/).
 
 View the Jupyter notebook
-[here](https://github.com/agoel00/HeartDiseasePredictionAPI/blob/master/model/HeartDisease.ipynb)
+[here](https://github.com/devesh2511/HeartDiseasePredictionAPI/blob/master/model/HeartDisease.ipynb)
 
 ## /predict endpoint
 
@@ -20,7 +20,7 @@ View the Jupyter notebook
 - Returns a binary prediction (0 or 1) and probability as well.
 
 	### Sample query
-    	https://heartapi.herokuapp.com/predict?age=31&sex=1&cigs=5&chol=230&sBP=280&dia=0&dBP=90&gluc=87&hRate=84
+    	https://heart-sn1y.onrender.com/predict?age=31&sex=1&cigs=5&chol=230&sBP=280&dia=0&dBP=90&gluc=87&hRate=84
 
 	### Sample output
 
@@ -51,30 +51,4 @@ View the Jupyter notebook
 ## /model endpoint
 - Returns the model details such as intercept and coefficients.
 
-		https://heartapi.herokuapp.com/model
-
-## Running locally
-
-1. Clone the repository
-
-   ```bash
-	   git clone https://github.com/agoel00/HeartDiseasePredictionAPI.git
-	
-      cd HeartDiseasePredictionAPI
-   ```
-2. Install dependencies
-   ```bash
-	   pip install requirements.txt
-   ```
-	
-3. Start the Flask server
-   ```bash
-	   python3 app.py
-   ```
-
-### A PWA which communicates with this API is deployed [here](https://heartify.netlify.com)
-
-![status](https://badgen.net/uptime-robot/status/m781547257-02e85bf091a6cde871b002fe)
-
-## License
-MIT
+		https://https://heart-sn1y.onrender.com/model
