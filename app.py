@@ -82,7 +82,7 @@ def model():
 
 @app.route('/')
 def index():
-    return('<h1> Rest API for predicting Coronary Heart Disease in a patient created by <a href="https://github.com/devesh2511">Devesh</a></p> </h1>'+
+    return('<h1> Rest API for predicting Coronary Heart Disease created by <a href="https://github.com/devesh2511">Devesh</a></p> </h1>'+
             '<h2> An example query is <a href="https://heartapi-dev.onrender.com/predict?age=31&sex=1&cigs=5&chol=230&sBP=280&dia=0&dBP=90&gluc=87&hRate=84">this</a></h2>'+
             '<h3>It uses parameters such as Age, Sex, Blood Pressure, Diabetes, Glucose and Heart rate for prediction. </h3>'+
             '<h3> This api uses scikit-learn for training the ML model and Flask for serving the webservice. It is trained on a Logistic Regression model with ~88% accuracy</h3>'+
